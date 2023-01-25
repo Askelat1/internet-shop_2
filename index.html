@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__link"></a>Каталог</li>
+                    <li class="nav__item"><a href="" class="nav__link"></a>Оплата и Доставки</li>
+                    <li class="nav__item"><a href="" class="nav__link"></a>Товары в кредит</li>
+                    <li class="nav__item"><a href="" class="nav__link"></a>Гарантия</li>
+                    <li class="nav__item"><a href="" class="nav__link"></a>Контакты</li>
+                </ul>
+                <div class="header__cart cart" tabindex="0">
+                    <div class="cart__text">
+                        Корзина
+                        <span class="cart__quantity">0</span>
+                    </div>
+                    <div class="cart-content">
+                        <ul class="cart-content__list" data-simplebar>
+                            <!-- <li class="cart-content__item">
+                                <article class="cart-content__product cart-product">
+                                    <img src="./5-картинки/honor 8A.png" class="cart-product__img" alt="">
+                                    <div class="cart-product__text">
+                                        <h3 class="cart-product__title">Honor 8A</h3>
+                                        <span class="cart-product__price">10000сом</span>
+                                    </div>
+                                    <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                                </article>
+                            </li> -->
+                        </ul>
+                        <div class="cart-content__bottom">
+                            <div class="cart-content__fullprice">
+                                <span>Итого:</span>
+                                <span class="fullprice">123 456 сом</span>
+                            </div>
+                            <button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp" data-graph-speed="700">Перейти в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="modal">
+		<div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+			<div class="modal-content order-modal__content">
+				<div class="order-modal__top">
+					<h2 class="order-modal__title">Оформление заказа</h2>
+					<span class="order-modal__number">Заказ № 3456 67</span>
+				</div>
+				<div class="order-modal__info">
+					<div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span>3 шт</span></div>
+					<div class="order-modal__summ order-modal__info-item">Общая сумма заказа: <span>568 789 ₽</span></div>
+					<div class="order-modal__products order-modal__info-item">
+						<button class="order-modal__btn">Состав заказа</button>
+						<ul class="order-modal__list">
+						</ul>
+					</div>
+				</div>
+				<form action="#" class="order-modal__form order">
+					<input type="hidden" name="theme" value="Обратный звонок">
+					<input type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+					<label class="order__label">
+						<span class="order__text">Ваше имя</span>
+						<input type="text" name="Имя" class="order__input">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Номер телефона</span>
+						<input type="tel" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Ваше имя</span>
+						<input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+					</label>
+					<button class="order__btn btn">Оформить заказ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+    <div class="section1">
+        <div class="ots">
+            <div class="mob__text">
+                <h1>Выбери свой телефон</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptates <br> expedita commodi eum veritatis quisquam omnis quod nostrum esse accusantium.</p>
+            </div>
+            <div class="mob__img"></div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Каталог</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="./phone.html">Телефоны</a>
+            <a href="#">Аксессуары</a>
+            <a href="#">Сумки</a>
+            <a href="#">Часы</a>
+            <a href="#">Гаджеты</a>
+            <a href="#">Другое</a>
+        </div>
+    </div>
+    <div class="conteiner">
+        <h2 id="pop">Популярные</h2>
+        <div class="row">
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/phone1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3> Iphone 12 Pro Max</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>36735</small>сом</span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/poco-m4 5g.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Poco M4 5G</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>12599</small>сом</span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/honor 8A.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Honor 8A</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>23000</small>сом</span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/watch smart2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Xiaomi Haylou Smart <br> Watch 2</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>9750</small>сом</span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/watch smart M5.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Умный браслет M5</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>7600</small>сом</span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/tehno pova 2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Tehno Pova 2</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>32.300</small>сом</span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/Airplus.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>AirPlus</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>10000сом</small></span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/Itel A48.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Itel A48</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>10000сом</small></span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/Itel A49.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Itel A49</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>10000сом</small></span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/Hoco L10.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Hoco L10</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>10000сом</small></span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/Hoco W30.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Hoco W30</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>10000сом</small></span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/xiomi12.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Xiaomi 12</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>10000сом</small></span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/Somic.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>'Somic' SC2000</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>10000сом</small></span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_md_3">
+                <div class="product">
+                    <div class="image">
+                        <img src="./5-картинки/JBL headhpon.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>JBL</h3>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="info__price">
+                            <span class="price"><small>10000сом</small></span>
+                            <button class="add__to_cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn__center">
+            <button class="show__more"> Показать еще</button>
+        </div>
+    </div>
+
+    <div class="image__wrapper">
+        <div class="slider">
+            <img src="./5-картинки/slaider1.jpg" class="image" alt="">
+            <img src="./5-картинки/slaider2.jpg" class="image" alt="">
+            <img src="./5-картинки/slaider3.jpg" class="image" alt="">
+            <img src="./5-картинки/slaider4.jpg" class="image" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="section2">
+        <div class="phone__brend"><img src="./5-картинки/sumsung.png" alt=""></div>
+        <div class="phone__brend"><img src="./5-картинки/apple.png" alt=""></div>
+        <div class="phone__brend"><img src="./5-картинки/xiaomi.png" alt=""></div>
+        <div class="phone__brend"><img src="./5-картинки/JBL.png" alt=""></div>
+        <div class="phone__brend"><img src="./5-картинки/realme.png" alt=""></div>
+        <div class="phone__brend"><img src="./5-картинки/tehno.png" alt=""></div>
+    </div>
+
+    <div class="section3">
+        <div class="event1">
+            <h3 id="h3">Акции</h3>
+            <div class="event__item1">
+                <p>22 ноября 2022 г.</p>
+                <p id="black">Выгодное предложение!</p>
+            </div>
+            <div class="event__item1">
+                <p>16 ноября 2022 г.</p>
+                <p id="black">Galaxy Black Friday и Galaxy Z Fold 4 5G</p>
+            </div>
+            <div class="event__item1">
+                <p>16 ноября 2022 г.</p>
+                <p id="black">Galaxy Black Friday и Galaxy Z Fold 4 5G</p>
+            </div>
+        </div>
+
+        <div class="event2">
+            <h3 id="h3">Будьте в курсе</h3>
+            <div class="event__item2">
+                Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми.
+            </div>
+            <div class="button">
+                <a href="#" id="open_pop_up">Оставить заявку</a>
+            </div>
+    
+            <div class="pop_up" id="pop_up">
+                <div class="pop_up_conteiner">
+                    <div class="pop_up_body" id="pop_up_body">
+                        <p></p>
+                        <form action="">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Номер телефона">
+                            <button>Оставить заказ</button>
+                        </form>
+                        <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section4">
+        <div class="conteiner2">
+            <div class="conteiner__block">
+                <div class="conteiner__icon">
+                    <img src="./5-картинки/icon1.png" alt="">
+                </div>
+                <h3>16 магазинов<br>
+                    по всей стране</h3>
+                    <br>
+                <p>Наши магазины расположены не только в г. Бишкек и его пригородах, но и на юге страны</p>
+            </div>
+            <div class="conteiner__block">
+                <div class="conteiner__icon">
+                    <img src="./5-картинки/icon2.png" alt="">
+                </div>
+                <h3>Распродажи<br>
+                    и акции</h3>
+                    <br>
+                <p>Мы проводим огромное количество акций, благодаря которым Вы сможете выгодно купить себе смартфоны Samsung, iPhone, Xiaomi</p>
+            </div>
+            <div class="conteiner__block">
+                <div class="conteiner__icon">
+                    <img src="./5-картинки/icon3.png" alt="">
+                </div>
+                <h3>Товары в кредит<br>
+                    и рассрочку</h3>
+                    <br>
+                <p>Мы продаём наши товары в кредит и рассрочку без первого взноса и переплаты</p>
+            </div>
+            <div class="conteiner__block">
+                <div class="conteiner__icon">
+                    <img src="./5-картинки/icon4.png" alt="">
+                </div>
+                <h3>Скидка по дисконтной
+                    карте 2%</h3>
+                    <br>
+                <p>Клиенты нашей сети получают дисконтные карты по которым они имеют скидку 2%</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="section5">
+            <div class="conteiner3">
+                <div class="block">
+                    <div class="block__tittle">Акции</div>
+                    <div class="block__item">
+                        Устройства О!Аксессуары Сумки Часы SIM-карты O! Гаджеты Электросамокаты АКЦИИ <br>
+                        Смартфоны в рассрочку до 9 месяцев без  переплат и первого платежа в O!Store
+                    </div>
+                    <div class="block__item">
+                        Купить смартфон мечты без переплаты и<br> процентов!
+                    </div>
+                    <div class="block__item">
+                        Купи любой смартфон и получи ЦЕЛЫХ 20 ГБ<br> интернета В ПОДАРОК
+                    </div>
+                    <div class="block__item">Дарим наушники к каждой покупке Tecno</div>
+                </div>
+
+                <div class="block">
+                    <div class="block__tittle">Каталог товаров</div>
+                    <a href="./phone.html" class="block__item">Телефоны</a>
+                    <div id="block__item">Планшеты</div>
+                    <div id="block__item">Часы</div>
+                    <div id="block__item">Гаджеты</div>
+                    <div id="block__item">Сумки</div>
+                    <div id="block__item">Ноутбуки</div>
+                </div>
+
+                <div class="block__contact">
+                    <div class="contact">
+                        <p id="contact">Наши контакты</p>
+                        <ul class="social">
+                            <li class="social__item whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </li>
+                            <li class="social__item twitter">
+                                <i class="fa-brands fa-twitter"></i>                        </li>
+                            <li class="social__item vk">
+                                <i class="fa-brands fa-vk"></i>
+                            </li>
+                            <li class="social__item instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                            <li class="social__item google">
+                                <i class="fa-brands fa-google"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item5">
+                        <p class="item__link5">Мобильные устройтсва</p>
+                        <div class="mob">
+                            <div class="mob__link1"></div>
+                            <div class="mob__link2"></div>
+                            <div class="mob__link3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script  src="https://kit.fontawesome.com/888b256bf3.js" crossorigin="anonymous"></script>
+    <script src="../5-ая работа/script.js"></script>
+    <script src="./simplebar.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./cart.js"></script>
+    <script src="./json.js"></script>
+</body>
+</html>
+
